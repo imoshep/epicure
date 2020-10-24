@@ -1,0 +1,34 @@
+@import "../../../services/colors.scss";
+
+:host-contex(.card) {
+  background-color: lawngreen;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  & .top-header {
+    padding: 1.5rem;
+    font-weight: 700;
+  }
+  & .image {
+    width: 100%;
+    height: 30%;
+    background-image: url("../../../../assets/images/dishes/TaMaLaKo@2x.jpg");
+    background-size: cover;
+  }
+  & .content {
+    background-color: $peach-light;
+    & .title {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    & .desc {
+      font-size: 1.25rem;
+    }
+    & .dishType {
+    }
+    & .dishPrice {
+    }
+  }
+}

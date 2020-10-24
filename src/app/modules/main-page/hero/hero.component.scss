@@ -1,0 +1,25 @@
+.hero {
+  background-image: url("../../../../assets/images/hero-picture-small.jpg");
+  background-size: cover;
+  height: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 600px) {
+    background-image: url("../../../../assets/images/hero-picture-small@2x.jpg");
+  }
+
+  @media (min-width: 960px) {
+    background-image: url("../../../../assets/images/hero-picture-small@3x.jpg");
+    height: 43.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    background-image: url("../../../../assets/images/hero-picture-large.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("../../../../assets/images/hero-picture-large@2x.jpg");
+  }
+}

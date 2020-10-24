@@ -1,0 +1,35 @@
+@import "../../../services/colors.scss";
+
+.searchbox {
+  background-color: rgba($white, 0.88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 1.1rem 2rem;
+
+  & h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+  }
+
+  & .searchbar {
+    margin-bottom: 0.3rem;
+    width: 16.8rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .searchbox {
+    padding: 2.3rem 8.3rem;
+
+    & h2 {
+      font-size: 2.2rem;
+    }
+
+    & .searchbar {
+      width: 32rem;
+      font-size: 1.375rem;
+    }
+  }
+}

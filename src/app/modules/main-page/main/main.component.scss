@@ -1,0 +1,16 @@
+.main {
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+
+  & h2 {
+    font-size: 1.875rem;
+    padding: 2.6rem 0;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 600px) {
+  .main {
+    padding: 7rem 10.5rem;
+  }
+}

@@ -1,0 +1,10 @@
+<div class="nav-menu">
+  <img src='../../../assets/icons/x.svg' alt="close menu" (click)="close()"/>
+  <div class="menu-box">
+    <a *ngFor="let link of links.reverse()" [routerLink]="link.route" class="menu-link">{{link.name}}</a>
+    <hr />
+    <a [routerLink]="signinUrl" class="base-link">Sign in</a>
+    <a [routerLink]="contactUrl" class="base-link">Contact us</a>
+    <a [routerLink]="termsUrl" class="base-link">Terms of use</a>
+  </div>
+</div>

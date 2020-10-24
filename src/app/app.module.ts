@@ -1,16 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { CardsModule } from './modules/cards/cards.module';
+import { MainPageModule } from './modules/main-page/main-page.module';
+import { LayoutModule } from './modules/layout/layout.module';
+import { UtilsModule } from "./modules/utils/utils.module";
 
+import { AppComponent } from './app.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule,
+    CardsModule,
+    MainPageModule,
+    LayoutModule,
+    UtilsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

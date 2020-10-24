@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="popular-rests">
+    <h2>The Popular Restaurants in Epicure :</h2>
+    <app-cards-display [cards]="restaurantsArr" [styleForTable]="restaurantTable"></app-cards-display>
+    <div fxHide fxShow.gt-sm class="footer">All Restaurants>></div>
+  </div>
+  <div class="signature-dishes">
+    <h2>Signature Dish of :</h2>
+    <app-cards-display [cards]="dishesArr" [styleForTable]="dishesTable"></app-cards-display>
+    <div class="icons">Icons</div>
+  </div>
+</div>

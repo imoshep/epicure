@@ -1,0 +1,19 @@
+@import "../../../services/colors.scss";
+
+.searchbar {
+  // background-color: transparent;
+  border: 0.5px solid lighten($black, 50%);
+  border-radius: 4px;
+  margin: auto 0;
+
+  & input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0 0.75rem;
+  }
+
+  & img {
+    padding: 0.5rem;
+  }
+}
