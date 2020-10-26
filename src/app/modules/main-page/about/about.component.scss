@@ -1,5 +1,6 @@
 @import "../../../services/colors.scss";
 @import "../../../services/layout.scss";
+@import "../../../services/typography.scss";
 
 .about {
   text-align: center;
@@ -17,7 +18,7 @@
     & .text {
       & h2 {
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: $p-small;
         margin-bottom: 0.5rem;
       }
 
@@ -32,6 +33,40 @@
       max-width: 50%;
     }
   }
+
+  & .app-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    & > div {
+      display: inline-flex;
+      border: 1px solid $black;
+      border-radius: 6px;
+      padding: 0.3rem 0.6rem;
+
+      & img {
+        width: 1.2rem;
+        margin: 0.2rem 0.5rem 0.2rem 0;
+      }
+
+      & .text {
+        text-align: center;
+        line-height: 1;
+        font-weight: 600;
+        margin: auto 0;
+
+        & .top {
+          font-size: 0.65rem;
+        }
+
+        & .bottom {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 600px) {
@@ -40,6 +75,7 @@
     margin-right: -$margin-desktop;
     padding-right: $margin-desktop + $additional-margin-desktop;
     padding-left: $margin-desktop + $additional-margin-desktop;
+    box-shadow: none;
     text-align: start;
 
     & .epicure {
@@ -54,7 +90,7 @@
         }
 
         & p {
-          font-size: 1rem;
+          font-size: $p-small;
         }
       }
 
@@ -62,6 +98,11 @@
         width: 20%;
         margin: auto 0;
       }
+    }
+
+    & .app-links {
+      justify-content: flex-start;
+      margin: 0;
     }
   }
 }

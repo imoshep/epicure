@@ -1,3 +1,37 @@
-:host {
-    height: 45rem;
+:host-context(.popular-rests) {
+  [flickity] {
+    height: 21.125rem;
+
+    & .cell {
+      height: 100%;
+      width: 60%;
+      margin-right: 0.8rem;
+    }
+  }
+}
+
+:host-context(.signature-dishes) {
+  [flickity] {
+    height: 39rem;
+    margin-bottom: 6rem;
+
+    & .cell {
+      height: 100%;
+      width: 75%;
+      margin-right: 0.8rem;
+    }
+  }
+}
+
+:host-context(app-chef) {
+  [flickity] {
+    height: 21rem;
+    // margin-bottom: 6rem;
+
+    & .cell {
+      height: 100%;
+      width: 45%;
+      margin-right: 0.8rem;
+    }
+  }
 }

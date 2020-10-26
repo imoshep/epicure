@@ -1,5 +1,5 @@
-<div flickity>
-  <app-card *ngFor="let card of cards" [cardData]="card"></app-card>
+<div flickity [flickityConfig]="flickityConfiguration">
+  <div app-card *ngFor="let card of cards" [cardData]="card"  class="cell"></div>
 </div>
 <!-- <div>
   <app-card *ngFor="let card of cards" [cardData]="card"></app-card>

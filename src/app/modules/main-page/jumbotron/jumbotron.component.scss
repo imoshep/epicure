@@ -1,17 +1,18 @@
-@import '../../../services/colors.scss';
-@import '../../../services/layout.scss';
+@import "../../../services/colors.scss";
+@import "../../../services/layout.scss";
 
 .jumbotron {
-    background-color: $light-gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 2.5rem 0;
+  background-color: $light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem 0;
+  margin-left: -$margin-mobile;
+  margin-right: -$margin-mobile;
 
-    a {
-        padding: 0.9rem 0.8rem;
-        background-color: rgba($peach, 0.8);
-    }
-
+  a {
+    padding: 0.9rem 0.8rem;
+    background-color: rgba($peach, 0.8);
+  }
 }

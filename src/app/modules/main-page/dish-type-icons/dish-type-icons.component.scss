@@ -1,22 +1,23 @@
 @import "../../../services/colors.scss";
 @import "../../../services/layout.scss";
+@import "../../../services/typography.scss";
 
 .dish-types {
   text-align: center;
   background-color: $light-gray;
-  padding: 2.5rem 0;
-  margin-left: -$margin-mobile;
-  margin-right: -$margin-mobile;
+  padding: 1rem 0;
+
+  margin: 0 (-$margin-mobile) 4.5rem;
 
   & h2 {
-    font-size: 1rem;
+    font-size: $p-small;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
   }
 
   & .icons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 85%;
     margin: 0 auto;
 
@@ -28,7 +29,7 @@
       padding: 0.5rem;
 
       & img {
-        max-height: 3rem;
+        max-height: 2.5rem;
         margin-bottom: 1rem;
       }
 
@@ -45,7 +46,7 @@
     margin-right: -$margin-desktop;
 
     & h2 {
-      font-size: 1.875rem;
+      font-size: $h2-size;
     }
 
     & .icons {

@@ -8,9 +8,14 @@ import { CardData } from 'src/app/interfaces/card-data';
 })
 export class CardsCarouselComponent implements OnInit {
   @Input() cards: CardData[];
-  flickityConfig = {
+  flickityConfiguration = {
     groupCells: false,
-    // autoPlay: 1500,
+    adaptiveHeight: true,
+    setGallerySize: false,
+    cellAlign: 'left',
+    contain: true,
+    prevNextButtons: false,
+    pageDots: false
   }
   constructor() { }
 

@@ -1,30 +1,44 @@
+@import "../../../services/typography.scss";
+
 .main {
-  padding: 2.5rem 0;
+  padding-top: 2.5rem;
   text-align: center;
 
-  & h2 {
-    font-size: 1.875rem;
-    padding: 2.6rem 0;
-    text-transform: uppercase;
+  & .popular-rests {
+    margin-bottom: 5rem;
   }
 
-  & .footer {
-    text-align: end;
-    font-size: 1.875rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+  & h2 {
+    font-size: $p-small;
     padding: 1rem 0;
-
-    & img {
-      display: inline-block;
-      margin-left: 1rem;
-    }
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: 600px) {
   .main {
     padding: 7rem 0;
+
+    & .popular-rests {
+      margin-bottom: 2rem;
+    }
+
+    & h2 {
+      font-size: $h2-size;
+    }
+
+    & .footer {
+      text-align: end;
+      font-size: $h2-size;
+      font-weight: 700;
+      letter-spacing: 2px;
+      padding: 1rem 0;
+
+      & img {
+        display: inline-block;
+        margin-left: 1rem;
+      }
+    }
 
     & .icons {
       margin-top: 5.5rem;

@@ -1,39 +1,50 @@
 @import "../../../services/colors.scss";
+@import "../../../services/typography.scss";
 
 .card {
   text-align: center;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   & .top-header {
     padding: 1rem;
-    font-size: 1.875rem;
+    font-size: $p-small;
     letter-spacing: 2px;
     font-weight: 700;
   }
 
+  & .image {
+    height: 15rem;
+    & img {
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
   & .content {
-    background-color: $peach-light;
-    padding: 1rem 0;
+    background-color: $peach;
+    padding: 1rem 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    min-height: 6rem;
 
     & .text {
       text-align: center;
 
       & .title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
         letter-spacing: 2px;
         line-height: normal;
         text-transform: capitalize;
+        margin-bottom: 0.5rem;
       }
 
       & .desc {
-        font-size: 1rem;
+        font-size: $p-small;
       }
     }
 
