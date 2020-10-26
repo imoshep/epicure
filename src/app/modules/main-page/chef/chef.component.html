@@ -1,1 +1,12 @@
-<p>chef works!</p>
+<h2>chef of the week :</h2>
+<div class="chef">
+    <div class="image">
+        <img [src]="imageUrl" [alt]="'chef '+fullName">
+        <div class="label">{{fullName}}</div>
+    </div>
+    <div class="desc">{{desc}}</div>
+</div>
+<div class="restaurants">
+    <h3>{{firstName | titlecase }}'s restaurants :</h3>
+    <app-cards-display cards="restaurants"></app-cards-display>
+</div>

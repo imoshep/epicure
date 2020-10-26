@@ -1,0 +1,26 @@
+@import '../../../services/colors.scss';
+@import '../../../services/layout.scss';
+
+.dish-types {
+    text-align: center;
+    background-color: $light-gray;
+    padding: 2.5rem 0;
+    margin-left: -$margin-mobile;
+    margin-right: -$margin-mobile;
+
+    & .icons {
+        display: flex;
+        justify-content: center;
+
+        & div {
+            padding: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .dish-types {
+      margin-left: -$margin-desktop;
+      margin-right: -$margin-desktop;
+    }
+}

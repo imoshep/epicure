@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { CardsModule } from '../cards/cards.module';
 import { UtilsModule } from '../utils/utils.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DishTypeIconsComponent } from './dish-type-icons/dish-type-icons.component';
 
 
 
@@ -20,6 +21,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MainComponent,
     ChefComponent,
     AboutComponent,
+    DishTypeIconsComponent,
   ],
   imports: [
     CommonModule,

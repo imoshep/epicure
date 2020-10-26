@@ -10,31 +10,18 @@ import { MockCardData } from 'src/app/services/mock-card-data';
 export class MainComponent implements OnInit {
   restaurantsArr: CardData[];
   dishesArr: CardData[];
-  restaurantTable: object = {
-    table: {
-      display: 'flex',
-      gap: '0.6rem',
-    },
-    card: {
-      // width: '22.5rem',
-      // height: '22.3rem'
-    }
-  };
-  dishesTable: object = {
-    table: {
-      display: 'flex',
-      gap: '0.6rem',
-  },
-  card: {
-    // width: '22.5rem',
-    height: '40.9rem'
-  }}
-
+  dishTypes: Array<{type: string, icon: string}>
+  
   constructor(private mockData: MockCardData) { }
 
   ngOnInit(): void {
     this.restaurantsArr = [this.mockData.rest, this.mockData.rest, this.mockData.rest]
     this.dishesArr = [this.mockData.dishTopHeader, this.mockData.dishTopHeader, this.mockData.dishTopHeader]
+    this.dishTypes= [
+      {type: 'spicy', icon: '../../../../assets/icons/spicy-icon.svg'}, 
+      {type: 'vegeterian', icon: '../../../../assets/icons/vegetarian.svg'}, 
+      {type: 'vegan', icon: '../../../../assets/icons/vegan-icon.svg'}, 
+    ]
   }
 
 }

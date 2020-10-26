@@ -8,7 +8,6 @@ import { CardData } from 'src/app/interfaces/card-data';
 })
 export class CardsDisplayComponent implements OnInit {
   @Input() cards: CardData[];
-  @Input() styleForTable:  {table: object, card: object};
 
   constructor() { }
 

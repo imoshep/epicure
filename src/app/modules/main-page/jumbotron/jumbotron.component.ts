@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JumbotronComponent implements OnInit {
 
+  links =[{name: 'Restaurants', route: '/restaurants'}, {name: 'Chefs', route: '/chefs'}];
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,83 @@
+Desktop
+=======
+header
+hero w/ searchbox
+((mobile - chefs/restaurants btns))
+cards - popular restaurants
+cards - signature dishes w/ icon-meanings
+chef of the week w/ restautants
+about
+footer
+
+desktop card displays
+=====================
+cards-table (flex-wrap @input: Cards[])
+card (supra-h2?, image, text: {h2, h3, icon?, price?})
+
+mobile card displays
+====================
+carousel
+card
+
+
+<homepage>
+  <hero></hero>
+  <jumbotron fxHide.gt-sm></jumbotron>
+  <appetizers>
+    <pop-restaurants>
+      <header></header>
+      <cards-carousel fxHide.gt-sm cards="restauransArr">
+        <card *ngFor="let card of cards" ></card>
+      </cards-carousel>
+      <cards-table fxHide fxShow.gt-sm cards="restauransArr">
+        <card *ngFor="let card of cards" ></card>
+      </cards-table>
+      <footer fxHide.gt-sm>link</footer>
+    </pop-restaurants>
+    <signature-dishes>
+      <header></header>
+      <cards-carousel fxHide.gt-sm cards="dishesArr">
+        <card *ngFor="let card of cards" ></card>
+      </cards-carousel>
+      <cards-table fxHide fxShow.gt-sm cards="dishesArr">
+        <card *ngFor="let card of cards" ></card>
+      </cards-table>
+      <icons></icons>
+    </signature-dishes>
+  </appetizers>
+  <chef-section>
+    <description></description>
+    <h3></h3>
+    <cards-carousel fxHide.gt-sm cards="chefsRestsArr"></cards-carousel>
+    <cards-table fxHide fxShow.gt-sm cards="chefsRestsArr"></cards-table>
+  </chef-section>
+  <about-section></about-section>
+</homepage>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

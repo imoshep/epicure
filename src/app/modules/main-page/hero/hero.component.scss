@@ -1,3 +1,5 @@
+@import '../../../services/layout.scss';
+
 .hero {
   background-image: url("../../../../assets/images/hero-picture-small.jpg");
   background-size: cover;
@@ -5,9 +7,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-left: -$margin-mobile;
+  margin-right: -$margin-mobile;
+  
   @media (min-width: 600px) {
     background-image: url("../../../../assets/images/hero-picture-small@2x.jpg");
+    margin-left: -$margin-desktop;
+    margin-right: -$margin-desktop;
   }
 
   @media (min-width: 960px) {

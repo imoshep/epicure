@@ -1,0 +1,10 @@
+<div class="dish-types">
+    <h2>The Meaning of Our Icons :</h2>
+    <div class="icons">
+        <div *ngFor="let i of dishTypes">
+            <img [src]="i.icon" alt="">
+            <h3>{{i.type}}</h3>
+        </div>
+    </div>
+    
+  </div>

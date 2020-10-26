@@ -8,14 +8,11 @@ import { CardData } from 'src/app/interfaces/card-data';
 })
 export class CardsTableComponent implements OnInit {
   @Input() cards: CardData[];
-  @Input() styling: {table: object, card: object};
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log('from ', this.cards[0].title);
 
-    console.log(this.styling);
 
   }
 

@@ -1,0 +1,53 @@
+@import '../../../services/colors.scss';
+@import '../../../services/layout.scss';
+
+    
+h2 {
+    text-align: center;
+    margin: 1rem auto;
+    text-transform: uppercase;
+}
+.chef {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+    & .image {
+        background-color: $black;
+        position: relative;
+        width: 100%;
+
+        & .label {
+            position: absolute;
+            bottom: 0;
+            width:100%;
+            background-color: rgba($white, 0.5);
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 1.75rem;
+            padding: 0.5rem 0;
+        }
+    }
+
+    & .desc {
+        padding: 1.3rem 0;
+    }
+}
+
+.restaurants {
+
+}
+
+@media (min-width: 600px) {
+    .chef {
+        flex-direction: row;
+        margin: 0 $additional-margin-desktop;
+
+        & .image {
+            & .label {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

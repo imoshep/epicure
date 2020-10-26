@@ -1,7 +1,7 @@
 export interface CardData {
   imageUrl: string;
   title: string;
-  desc: string;
+  desc?: string;
   dishType?: {
     spicy?: boolean;
     vegeterian?: boolean;

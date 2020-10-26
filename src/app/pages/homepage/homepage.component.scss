@@ -1,0 +1,11 @@
+@import '../../services/layout.scss';
+
+.homepage {
+    margin: 0 $margin-mobile;
+}
+
+@media (min-width: 600px) {
+    .homepage {
+        margin: 0 $margin-desktop;
+    }
+}

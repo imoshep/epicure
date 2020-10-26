@@ -1,0 +1,55 @@
+@import '../../../services/colors.scss';
+@import '../../../services/layout.scss';
+
+.about {
+    text-align: center;
+    background-color: $light-gray;
+    margin-left: -$margin-mobile;
+    margin-right: -$margin-mobile;
+    padding: 1.75rem 0 4rem 0;
+    box-shadow: 0 1px 4px rgba($black, 0.15);
+    
+    & .epicure {
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            text-transform: uppercase;
+            
+        }
+
+        & p {
+            margin-bottom: 1.5rem;
+        }
+        
+        & img {
+            margin: 0 auto;
+            padding: 0.5rem 0;
+        }
+    }
+
+}
+
+@media (min-width: 600px) {
+    .about {
+        margin-left: -$margin-desktop;
+        margin-right: -$margin-desktop;
+        padding-right: $margin-desktop + $additional-margin-desktop;
+        padding-left: $margin-desktop + $additional-margin-desktop;
+        text-align: start;
+        
+        & .epicure {
+            flex-direction: row;
+
+            & .text {
+                max-width: 50%;
+            }
+            
+            & img {
+            }
+        }
+
+
+        
+    }
+}

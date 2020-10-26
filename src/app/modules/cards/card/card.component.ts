@@ -2,13 +2,12 @@ import { Component, Input, OnInit } from '@angular/core';
 import { CardData } from 'src/app/interfaces/card-data';
 
 @Component({
-  selector: '[app-card]',
+  selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
   @Input() cardData: CardData;
-  @Input() styling: object;
   imageUrl: string;
   title: string;
   desc: string;
@@ -18,7 +17,7 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
     this.imageUrl= `../../../../assets/images/dishes/${this.cardData.imageUrl}`;
     this.title= this.cardData.title;
     this.desc= this.cardData.desc;

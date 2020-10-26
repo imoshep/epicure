@@ -1,1 +1,3 @@
-<p>jumbotron works!</p>
+<div  fxHide.gt-sm class="jumbotron">
+    <a *ngFor="let link of links.reverse()" [routerLink]="link.route">{{link.name}}</a>
+</div>

@@ -1,10 +1,10 @@
-<!-- <div class="card" [ngStyle]="styling"> -->
+<div class="card">
   <div *ngIf="topHeader" class="top-header">{{topHeader}}</div>
-  <div class="image" [attr.url]="imageUrl"></div>
+  <img [src]="imageUrl" class="image" [attr.url]="imageUrl" />
   <div class="content">
     <div class="title">{{title}}</div>
     <div class="desc">{{desc}}</div>
     <div *ngIf="dishType" class="dish-type"></div>
     <div *ngIf="dishPrice" class="dish-price"></div>
   </div>
-<!-- </div> -->
+</div>
