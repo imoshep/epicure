@@ -6,3 +6,11 @@ what's the team workflow for questions for graphics?
 measure distaces in Zeplin?
 i'm really not sure i'd implemented font properly
 how would we display images eventually? Because we're using a relative path now. Would we have a strage service?
+about-logo trnspatent background
+another peach color for jumbotron links?
+
+todos
+=====
+look an route-urls.service managing navlink dynamically: we're using them on navbar (in header) and on jumbotron (in homepage in router outlet) - rising the question should we manage them somewhere and if so, where? maybe the server
+organize layout on chef/about/jumbotron
+implement cards properly
