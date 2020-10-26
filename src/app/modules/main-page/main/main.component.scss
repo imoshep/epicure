@@ -11,12 +11,23 @@
   & .footer {
     text-align: end;
     font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: 2px;
     padding: 1rem 0;
+
+    & img {
+      display: inline-block;
+      margin-left: 1rem;
+    }
   }
 }
 
 @media (min-width: 600px) {
   .main {
     padding: 7rem 0;
+
+    & .icons {
+      margin-top: 5.5rem;
+    }
   }
 }

@@ -1,26 +1,56 @@
-@import '../../../services/colors.scss';
-@import '../../../services/layout.scss';
+@import "../../../services/colors.scss";
+@import "../../../services/layout.scss";
 
 .dish-types {
-    text-align: center;
-    background-color: $light-gray;
-    padding: 2.5rem 0;
-    margin-left: -$margin-mobile;
-    margin-right: -$margin-mobile;
+  text-align: center;
+  background-color: $light-gray;
+  padding: 2.5rem 0;
+  margin-left: -$margin-mobile;
+  margin-right: -$margin-mobile;
 
-    & .icons {
-        display: flex;
-        justify-content: center;
+  & h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
 
-        & div {
-            padding: 0.5rem;
-        }
+  & .icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+
+      & img {
+        max-height: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      & h3 {
+        font-weight: 400;
+      }
     }
+  }
 }
 
 @media (min-width: 600px) {
-    .dish-types {
-      margin-left: -$margin-desktop;
-      margin-right: -$margin-desktop;
+  .dish-types {
+    margin-left: -$margin-desktop;
+    margin-right: -$margin-desktop;
+
+    & h2 {
+      font-size: 1.875rem;
     }
+
+    & .icons {
+      max-width: 25%;
+      margin: 0 auto;
+    }
+  }
 }

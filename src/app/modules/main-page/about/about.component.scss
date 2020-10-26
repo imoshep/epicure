@@ -1,55 +1,67 @@
-@import '../../../services/colors.scss';
-@import '../../../services/layout.scss';
+@import "../../../services/colors.scss";
+@import "../../../services/layout.scss";
 
 .about {
-    text-align: center;
-    background-color: $light-gray;
-    margin-left: -$margin-mobile;
-    margin-right: -$margin-mobile;
-    padding: 1.75rem 0 4rem 0;
-    box-shadow: 0 1px 4px rgba($black, 0.15);
-    
-    & .epicure {
-        display: flex;
-        flex-direction: column;
+  text-align: center;
+  background-color: $light-gray;
+  margin-left: -$margin-mobile;
+  margin-right: -$margin-mobile;
+  padding: 1.75rem 0 4rem 0;
+  box-shadow: 0 1px 4px rgba($black, 0.15);
 
-        & h2 {
-            text-transform: uppercase;
-            
-        }
+  & .epicure {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
 
-        & p {
-            margin-bottom: 1.5rem;
-        }
-        
-        & img {
-            margin: 0 auto;
-            padding: 0.5rem 0;
-        }
+    & .text {
+      & h2 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      & p {
+        margin: 0 0 1.5rem;
+        font-size: 0.85rem;
+      }
     }
 
+    & img {
+      margin: 0 auto;
+      max-width: 50%;
+    }
+  }
 }
 
 @media (min-width: 600px) {
-    .about {
-        margin-left: -$margin-desktop;
-        margin-right: -$margin-desktop;
-        padding-right: $margin-desktop + $additional-margin-desktop;
-        padding-left: $margin-desktop + $additional-margin-desktop;
-        text-align: start;
-        
-        & .epicure {
-            flex-direction: row;
+  .about {
+    margin-left: -$margin-desktop;
+    margin-right: -$margin-desktop;
+    padding-right: $margin-desktop + $additional-margin-desktop;
+    padding-left: $margin-desktop + $additional-margin-desktop;
+    text-align: start;
 
-            & .text {
-                max-width: 50%;
-            }
-            
-            & img {
-            }
+    & .epicure {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+
+      & .text {
+        max-width: 60%;
+        & h2 {
+          font-size: 1.25rem;
         }
 
+        & p {
+          font-size: 1rem;
+        }
+      }
 
-        
+      & img {
+        width: 20%;
+        margin: auto 0;
+      }
     }
+  }
 }

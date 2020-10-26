@@ -19,18 +19,18 @@ export class ChefComponent implements OnInit {
     this.chef = {
       firstName: 'yossi',
       lastName: 'shitrit',
-      desc: `Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including  running the kitchen in his first restaurant, the fondly-remembered  Violet, located in Moshav Udim.  Shitrit's creativity and culinary acumen  born of long experience are expressed in the every detail of each and 
+      desc: `Chef Yossi Shitrit has been living and breathing his culinary dreams for more than two decades, including  running the kitchen in his first restaurant, the fondly-remembered  Violet, located in Moshav Udim.  Shitrit's creativity and culinary acumen  born of long experience are expressed in the every detail of each and
       every dish.`,
-      imageUrl: '../../../../assets/images/chefs/yossi-shitrit@2x.jpg', 
+      imageUrl: '../../../../assets/images/chefs/yossi-shitrit@2x.jpg',
       restaurants: [
         {imageUrl: '../../../../assets/images/restaurants/onza@2x.jpg',
-         title: 'onza' 
+         title: 'onza'
         },
         {imageUrl: '../../../../assets/images/restaurants/kitchen-market@2x.jpg',
-         title: 'kitchen market' 
+         title: 'kitchen market'
         },
         {imageUrl: '../../../../assets/images/restaurants/mashya@2x.jpg',
-         title: 'mashya' 
+         title: 'mashya'
         }
       ]
     }

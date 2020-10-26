@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dish-type-icons',
+  selector: '[app-dish-type-icons]',
   templateUrl: './dish-type-icons.component.html',
   styleUrls: ['./dish-type-icons.component.scss']
 })
@@ -10,8 +10,7 @@ export class DishTypeIconsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.dishTypes);
-    
+
   }
 
 }

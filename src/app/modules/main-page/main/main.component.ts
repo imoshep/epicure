@@ -11,16 +11,16 @@ export class MainComponent implements OnInit {
   restaurantsArr: CardData[];
   dishesArr: CardData[];
   dishTypes: Array<{type: string, icon: string}>
-  
+
   constructor(private mockData: MockCardData) { }
 
   ngOnInit(): void {
-    this.restaurantsArr = [this.mockData.rest, this.mockData.rest, this.mockData.rest]
-    this.dishesArr = [this.mockData.dishTopHeader, this.mockData.dishTopHeader, this.mockData.dishTopHeader]
+    this.restaurantsArr = this.mockData.rests;
+    this.dishesArr = this.mockData.signatureDishes;
     this.dishTypes= [
-      {type: 'spicy', icon: '../../../../assets/icons/spicy-icon.svg'}, 
-      {type: 'vegeterian', icon: '../../../../assets/icons/vegetarian.svg'}, 
-      {type: 'vegan', icon: '../../../../assets/icons/vegan-icon.svg'}, 
+      {type: 'spicy', icon: '../../../../assets/icons/spicy-icon.svg'},
+      {type: 'vegetarian', icon: '../../../../assets/icons/vegetarian.svg'},
+      {type: 'vegan', icon: '../../../../assets/icons/vegan-icon.svg'},
     ]
   }
 

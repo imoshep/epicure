@@ -2,9 +2,20 @@
   <div *ngIf="topHeader" class="top-header">{{topHeader}}</div>
   <img [src]="imageUrl" class="image" [attr.url]="imageUrl" />
   <div class="content">
-    <div class="title">{{title}}</div>
-    <div class="desc">{{desc}}</div>
-    <div *ngIf="dishType" class="dish-type"></div>
-    <div *ngIf="dishPrice" class="dish-price"></div>
+    <div class="text">
+      <div class="title">{{title}}</div>
+      <div class="desc">{{desc}}</div>
+    </div>
+    <div class="footer">
+      <div *ngIf="dishType" class="dish-type">
+        <img *ngFor="let type of dishType" [src]="type">
+      </div>
+      <div *ngIf="dishPrice" class="dish-price">
+        <div class="hr"></div>
+        <img src="../../../../assets/icons/ils.svg" />
+        <div class="price">{{dishPrice}}</div>
+        <div class="hr"></div>
+      </div>
+    </div>
   </div>
 </div>

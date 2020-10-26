@@ -1,6 +1,6 @@
 header (navbar)
 ======
-searchbox's width is set. can I make it more flexible?
+searchbox's width is set. can I make it more flexible? differnt width for different view (check flex-grow)
 the design uses different nams for router links in the navbar-desktop-view and the moblie nav-menu. I want to use the same data for both.
 what's the team workflow for questions for graphics?
 measure distaces in Zeplin?

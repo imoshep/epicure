@@ -8,5 +8,5 @@
 </div>
 <div class="restaurants">
     <h3>{{firstName | titlecase }}'s restaurants :</h3>
-    <app-cards-display cards="restaurants"></app-cards-display>
+    <app-cards-display *ngIf="restaurants" [cards]="restaurants"></app-cards-display>
 </div>

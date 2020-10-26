@@ -2,4 +2,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 0.6rem;
+}
+
+:host-context(app-chef) {
+  .table {
+    justify-content: flex-start;
+    gap: 0.9rem;
+  }
 }
