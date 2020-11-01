@@ -21,4 +21,13 @@ export class RestaurantService {
       return error.message;
     }
   }
+
+  async getByChef(chefID: string) {
+    try {
+      const rests = await this.http.get(`${this.apiUrl}/${chefID}`).toPromise();
+      return rests;
+    } catch(error) {
+      return error.message;
+    }
+  }
 }
