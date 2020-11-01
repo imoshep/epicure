@@ -1,0 +1,11 @@
+:host-context(.rest-cards) {
+  @media (min-width: 1070px) {
+    .card {
+      & .content {
+        & .desc {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

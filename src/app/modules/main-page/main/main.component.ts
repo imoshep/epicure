@@ -18,9 +18,9 @@ export class MainComponent implements OnInit {
     this.restaurantsArr = this.mockData.rests;
     this.dishesArr = this.mockData.signatureDishes;
     this.dishTypes= [
-      {type: 'spicy', icon: '../../../../assets/icons/spicy-icon.svg'},
-      {type: 'vegetarian', icon: '../../../../assets/icons/vegetarian.svg'},
-      {type: 'vegan', icon: '../../../../assets/icons/vegan-icon.svg'},
+      {type: 'spicy', icon: '/assets/icons/spicy-icon.svg'},
+      {type: 'vegetarian', icon: '/assets/icons/vegetarian.svg'},
+      {type: 'vegan', icon: '/assets/icons/vegan-icon.svg'},
     ]
   }
 

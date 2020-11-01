@@ -10,6 +10,7 @@ import { UtilsModule } from "./modules/utils/utils.module";
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,9 +23,9 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     CardsModule,
     MainPageModule,
     LayoutModule,
-    UtilsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [],
 })
 export class AppModule { }

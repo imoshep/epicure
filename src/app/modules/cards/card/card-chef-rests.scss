@@ -2,34 +2,12 @@
   .card {
     & .image {
       height: 10rem;
-      & img {
-        min-height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    & .content {
-      min-height: 6rem;
-      & .text {
-        & .title {
-          font-size: 1.5rem;
-        }
-      }
     }
   }
 
   @media (min-width: 600px) {
     .card {
       max-width: 11rem;
-
-      & .content {
-        min-height: 6rem;
-        & .text {
-          & .title {
-            font-size: 1.5rem;
-          }
-        }
-      }
     }
   }
 }

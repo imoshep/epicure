@@ -28,7 +28,7 @@ export class MockCardData {
     imageUrl: 'pad-thay@2x.jpg',
     title: "Pad Ki Mao",
     desc: "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-    dishType: ['../../../../assets/icons/spicy-icon.svg'],
+    dishType: ['/assets/icons/spicy-icon.svg'],
     dishPrice: 88
   },
   {
@@ -44,7 +44,7 @@ export class MockCardData {
     imageUrl: 'smoked-pizza@2x.jpg',
     title: "Smoked Pizza",
     desc: `Basil dough, cashew "butter", demi-glace, bison & radish`,
-    dishType: ['../../../../assets/icons/vegan-icon.svg'],
+    dishType: ['/assets/icons/vegan-icon.svg'],
     dishPrice: 65
   },
   ]

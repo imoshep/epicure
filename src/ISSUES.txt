@@ -9,8 +9,11 @@ how would we display images eventually? Because we're using a relative path now.
 about-logo trnspatent background
 another peach color for jumbotron links?
 
+Do you to any extent write global css for typology?
+does anything happen if we remove the empty constructor line?
+
 todos
 =====
-look an route-urls.service managing navlink dynamically: we're using them on navbar (in header) and on jumbotron (in homepage in router outlet) - rising the question should we manage them somewhere and if so, where? maybe the server
-organize layout on chef/about/jumbotron
-implement cards properly
+go through all see all's ok
+bint searchbar input to parent component
+prettier(!)

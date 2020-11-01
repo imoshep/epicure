@@ -1,14 +1,19 @@
 @import "../../../services/colors.scss";
 
-.searchbar {
-  // background-color: transparent;
+:host {
   border: 0.5px solid lighten($black, 50%);
   border-radius: 4px;
-  margin: auto 0;
+  // margin: auto 0;
+  justify-content: space-between;
 
-  & input {
+  &.focus {
+    border: 1px solid $peach-dark;
+  }
+
+  & ::ng-deep input {
     background-color: transparent;
     border: none;
+    outline: none;
     width: 100%;
     padding: 0 0.75rem;
   }

@@ -10,6 +10,7 @@ import { CardsModule } from '../cards/cards.module';
 import { UtilsModule } from '../utils/utils.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DishTypeIconsComponent } from './dish-type-icons/dish-type-icons.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -24,10 +25,12 @@ import { DishTypeIconsComponent } from './dish-type-icons/dish-type-icons.compon
     DishTypeIconsComponent,
   ],
   imports: [
+    RouterModule,
     CommonModule,
     CardsModule,
     UtilsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+
   ],
   exports: [
     HeroComponent,

@@ -7,13 +7,6 @@
   flex-direction: column;
   overflow: hidden;
 
-  & .top-header {
-    padding: 1rem;
-    font-size: $p-small;
-    letter-spacing: 2px;
-    font-weight: 700;
-  }
-
   & .image {
     height: 15rem;
     & img {
@@ -29,10 +22,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 6rem;
+    min-height: 8rem;
 
     & .text {
       text-align: center;
+      padding: 1rem;
 
       & .title {
         font-size: 1.5rem;
@@ -44,24 +38,21 @@
       }
 
       & .desc {
-        font-size: $p-small;
+        font-size: 1.5rem;
       }
     }
 
     & .footer {
-      & .dish-type {
-        width: 1.5rem;
-        margin: 0 auto 0.5rem;
-        min-height: 1rem;
-      }
-
       & .dish-price {
         display: flex;
         flex-direction: row;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
 
         & img {
-          width: 0.6rem;
-          margin: 0.2rem 0.1rem 0 0;
+          width: 1rem;
+          margin: 0.4rem 0.3rem 0 0;
         }
 
         & .hr {
@@ -69,7 +60,7 @@
           min-width: 5rem;
           max-height: 1px;
           background-color: $dark-gray;
-          margin: 0.7rem 0.3rem 0;
+          margin: 1.5rem 0.3rem 0;
         }
       }
     }

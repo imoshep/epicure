@@ -8,5 +8,7 @@ export class RouteUrlsService {
   useTerms = '/use-terms';
   privacy = "/privacy-policy";
   signIn = '/sign-in';
+  restaurants = '/restaurants';
+  chefs = '/chefs';
   constructor() { }
 }

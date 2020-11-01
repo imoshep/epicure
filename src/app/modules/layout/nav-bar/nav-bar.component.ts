@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RouteUrlsService } from 'src/app/services/route-urls.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,11 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  links =[{name: 'Restaurants', route: '/restaurants'}, {name: 'Chefs', route: '/chefs'}];
+  links: Array<{name: string, route: string}>
   showMenu: boolean;
-  constructor() { }
+  constructor(private urlService: RouteUrlsService) { }
 
   ngOnInit(): void {
+    this.links =[{name: 'Restaurants', route: this.urlService.restaurants}, {name: 'Chefs', route: this.urlService.chefs}];
+
   }
 
 }
