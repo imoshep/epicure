@@ -12,16 +12,16 @@ export interface ChefFromDB {
   name: string;
   about?: string;
   imageUrl?: string;
-  restaurants?: string[] | RestaurantDocument[];
+  // restaurants?: string[] | RestaurantDocument[];
 }
 
 
 interface ChefBaseDocument extends  ChefFromDB, Document {}
 
-export interface ChefDocument extends ChefBaseDocument {
-  restaurants: string[];
-}
+// export interface ChefDocument extends ChefBaseDocument {
+//   restaurants: string[];
+// }
 
-export interface ChefPopulatedDocument extends ChefBaseDocument {
-  restaurants:  RestaurantDocument[];
-}
+// export interface ChefPopulatedDocument extends ChefBaseDocument {
+//   restaurants:  RestaurantDocument[];
+// }

@@ -18,7 +18,7 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.imageUrl= `/assets/images/dishes/${this.cardData.imageUrl}`;
+    this.imageUrl= `/assets/images/${this.cardData.imageUrl}`;
     this.title= this.cardData.title;
     this.desc= this.cardData.desc;
     this.dishType= this.cardData.dishType;
