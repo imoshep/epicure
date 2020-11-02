@@ -13,10 +13,9 @@ export class DishService {
     this.apiUrl = environment.apiUrl+'/dishes'
   }
 
-  async getSignatureDishes(restsArr: string[]) {
+  getSignatureDishes(restsArr: string[] ) {
     try {
-      const sigDishes = await this.http.post(`${this.apiUrl}/signature`, restsArr).toPromise();
-      return sigDishes;
+      return this.http.post(`${this.apiUrl}/signature`,{ restsArr});
     } catch(error) {
       return error.message;
     }

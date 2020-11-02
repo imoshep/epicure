@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { environment } from "../../environments/environment";
+import { RestaurantDocument } from '../interfaces/restaurant';
 
 @Injectable({
   providedIn: 'root'
@@ -13,10 +14,9 @@ export class RestaurantService {
     this.apiUrl = environment.apiUrl+'/restaurants'
    }
 
-  async getPopular(numOfRests: string) {
+  getPopular(numOfRests: string) {
     try {
-      const popularRests = await this.http.get(`${this.apiUrl}/popular`,{params: {number: numOfRests}}).toPromise();
-      return popularRests;
+      return this.http.get(`${this.apiUrl}/popular`,{params: {number: numOfRests}});
     } catch(error) {
       return error.message;
     }

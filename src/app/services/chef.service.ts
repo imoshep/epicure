@@ -14,8 +14,8 @@ export class ChefService {
     this.apiUrl = environment.apiUrl+'/chefs'
   }
 
-  async getByID(chefID: string) {
-    const chef = await this.http.get(`${this.apiUrl}/${chefID}`).toPromise();
+  getByID(chefID: string) {
+    return this.http.get(`${this.apiUrl}/${chefID}`);
   }
 
 }
